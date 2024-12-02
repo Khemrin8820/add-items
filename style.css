@@ -1,0 +1,10 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+.button-add-item {
+  background-color: #ff5200;
+  padding: 18px 10px;
+}
