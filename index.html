@@ -10,12 +10,14 @@
 </head>
 
 <body>
+  <!--Button Click Add Items-->
   <div class="button-add-item">
     <button id="btnAddItem">
       <i class="fas fa-plus"></i>
       <span>Add Item</span>
     </button>
   </div>
+  <!--Table to Store Items-->
   <div class="tbl-items">
     <table>
       <tr>
@@ -31,10 +33,25 @@
         <td>98$</td>
         <td>12</td>
         <td>
-          <button></button>
+          <button id="btn-edit">
+            <i class="fas fa-pen-to-square"></i>
+          </button>
+          <button id="btn-delete">
+            <i class="fa-solid fa-trash"></i>
+          </button>
         </td>
       </tr>
+      <tr class="row-total">
+        <td colspan="3" style="text-align: end;">Total:</td>
+        <td colspan="2" style="text-align:left;">50$</td>
+      </tr>
     </table>
+  </div>
+  <!--Form show when user click on button Add Items-->
+  <div class="form-style">
+    <form>
+
+    </form>
   </div>
 </body>
 
