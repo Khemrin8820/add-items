@@ -76,5 +76,66 @@ td {
   display: flex;
   justify-content: center;
   align-items: center;
-  display: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+h1 {
+  margin-left: 5px;
+}
+.frm-input {
+  background-color: #dcdcdc;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  border-radius: 5px;
+  position: relative;
+}
+#btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 7px 30px;
+  border-radius: 0 5px 0 0;
+  border-style: none;
+  background-color: #30f516af;
+  font-size: 20px;
+}
+.frm-student {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2px;
+  background-color: #f0f8ff;
+  padding: 5px;
+}
+.frm-student input {
+  margin-bottom: 5px;
+  padding: 5px;
+  border-style: solid;
+  border-radius: 5px;
+}
+.button-save {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+#btn-save {
+  padding: 10px;
+  width: 25%;
+  font-size: 15px;
+  border-style: none;
+  border-radius: 5px;
+  background-color: #30f516af;
+  margin: 5px;
+}
+
+@media (max-width: 470px) {
+  .tbl-items {
+    display: flex;
+  }
+  .tbl-items table tr th {
+    font-size: 15px;
+  }
 }
