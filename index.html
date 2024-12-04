@@ -10,6 +10,10 @@
 </head>
 
 <body>
+  <!--Title Student Name List-->
+  <div class="title-h2">
+    <h2>Inventory List</h2>
+  </div>
   <!--Button Click Add Items-->
   <div class="button-add-item">
     <button id="btnAddItem">
@@ -20,63 +24,35 @@
   <!--Table to Store Items-->
   <div class="tbl-items">
     <table>
-      <tr>
+      <tr class="header-list">
         <th>ID</th>
         <th>Name</th>
         <th>Price</th>
         <th>Instock</th>
         <th>Action</th>
       </tr>
-      <tr>
-        <td>1</td>
-        <td>Iphone</td>
-        <td>98$</td>
-        <td>12</td>
-        <td>
-          <button id="btn-edit">
-            <i class="fas fa-pen-to-square"></i>
-          </button>
-          <button id="btn-delete">
-            <i class="fa-solid fa-trash"></i>
-          </button>
-        </td>
-      </tr>
       <tr class="row-total">
-        <td colspan="3" style="text-align: end;">Total:</td>
-        <td colspan="2" style="text-align:left;">50$</td>
       </tr>
     </table>
   </div>
   <!--Form show when user click on button Add Items-->
   <div class="form-style">
     <div class="frm-input">
-      <h1>Student Form</h1>
+      <h1>Stocks Form</h1>
       <!--Button Close-->
       <button id="btn-close">
         <i class="fa-regular fa-circle-xmark"></i>
       </button>
       <!--Form Input Info Student-->
       <form class="frm-student">
-        <label>Student ID:</label>
-        <input type="number" placeholder="Number ID">
+        <label>ID:</label>
+        <input type="number" placeholder="Input ID" id="txt-id" readonly>
         <label>Name</label>
-        <input type="text" placeholder="Input Name">
-        <label>
-          <input type="radio">
-          <span>Male</span>
-        </label>
-        <label>
-          <input type="radio">
-          <span>Female</span>
-        </label>
-        <label>
-          <input type="radio">
-          <span>Other</span>
-        </label>
-        <label>Date of Birth:</label>
-        <input type="date">
-        <label>Address:</label>
-        <input type="text" placeholder="Address">
+        <input type="text" placeholder="Input Name" id="txt-name" autofocus>
+        <label>Price:</label>
+        <input type="number" placeholder="Input Price" id="txt-price">
+        <label>In Stock:</label>
+        <input type="number" placeholder="Number in Stock" id="txt-stock">
       </form>
       <div class="button-save">
         <button id="btn-save">
@@ -86,6 +62,8 @@
       </div>
     </div>
   </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./index.js"></script>
 </body>
 
 </html>
